@@ -3,10 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <meta name="description" content="Yoni Tech - Personal technology brand by Yohannes Aregay. IT Specialist, Digital Creator, and IT graduate from Debre Tabor University. Offering modern digital solutions and IT services.">
+  <meta name="description" content="Yoni Tech - Personal technology brand by Yohannes Aregay. IT Specialist, Digital Creator, and IT graduate from Debre Tabor University.">
   <meta name="author" content="Yohannes Aregay">
-  <meta name="keywords" content="Yoni Tech, Yohannes Aregay, IT Specialist, Web Development, Ethiopia, Debre Tabor University, Digital Marketing">
-  <title>Yoni Tech | Yohannes Aregay - IT Specialist & Digital Creator</title>
+  <title>Yoni Tech | Yohannes Aregay - IT Specialist</title>
   <!-- Google Fonts + Font Awesome -->
   <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
@@ -23,10 +22,8 @@
       color: #EDF2F7;
       scroll-behavior: smooth;
       line-height: 1.5;
-      position: relative;
     }
 
-    /* Custom scroll */
     ::-webkit-scrollbar {
       width: 8px;
     }
@@ -53,7 +50,6 @@
       backdrop-filter: blur(16px);
       border-bottom: 1px solid rgba(10, 179, 198, 0.3);
       padding: 1rem 0;
-      transition: all 0.2s;
     }
     .nav-container {
       display: flex;
@@ -69,7 +65,6 @@
       -webkit-background-clip: text;
       background-clip: text;
       color: transparent;
-      letter-spacing: -0.5px;
     }
     .nav-links {
       display: flex;
@@ -82,7 +77,6 @@
       color: #E2E8F0;
       font-weight: 500;
       transition: 0.2s;
-      font-size: 0.95rem;
     }
     .nav-links a:hover {
       color: #0ab3c6;
@@ -93,7 +87,6 @@
       background: #111827cc;
       padding: 0.3rem 0.9rem;
       border-radius: 40px;
-      backdrop-filter: blur(4px);
     }
     .lang-btn {
       background: none;
@@ -101,7 +94,6 @@
       color: #94a3b8;
       cursor: pointer;
       font-weight: 600;
-      font-size: 0.8rem;
       padding: 0.2rem 0.7rem;
       border-radius: 30px;
       transition: 0.2s;
@@ -132,7 +124,6 @@
       border-radius: 4px;
     }
 
-    /* Buttons */
     .btn {
       display: inline-block;
       background: transparent;
@@ -151,7 +142,6 @@
       background: #0ab3c6;
       color: #0A0C15;
       border: none;
-      box-shadow: 0 4px 10px rgba(10, 179, 198, 0.2);
     }
     .btn-primary:hover {
       background: #0897a8;
@@ -162,18 +152,19 @@
       transform: translateY(-2px);
     }
 
-    /* Avatar circle */
+    /* Avatar with photo support */
     .avatar-circle {
-      width: 160px;
-      height: 160px;
-      background: linear-gradient(145deg, #0f172a, #0ab3c620);
+      width: 180px;
+      height: 180px;
       border-radius: 50%;
+      border: 4px solid #0ab3c6;
+      box-shadow: 0 15px 30px -8px rgba(0,0,0,0.4);
+      margin: 0 auto;
+      overflow: hidden;
+      background: linear-gradient(145deg, #0f172a, #0ab3c620);
       display: flex;
       align-items: center;
       justify-content: center;
-      border: 3px solid #0ab3c6;
-      box-shadow: 0 15px 30px -8px rgba(0,0,0,0.4);
-      margin: 0 auto;
     }
     .avatar-img {
       width: 100%;
@@ -182,7 +173,7 @@
       border-radius: 50%;
     }
 
-    /* Skills progress bars & grid */
+    /* Skills */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -201,7 +192,6 @@
       display: flex;
       justify-content: space-between;
       margin-bottom: 0.4rem;
-      font-weight: 500;
     }
     .progress-bar {
       background: #1e293b;
@@ -214,7 +204,7 @@
       width: 0%;
       height: 100%;
       border-radius: 10px;
-      transition: width 1s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      transition: width 1s ease;
     }
     .soft-badge {
       display: inline-block;
@@ -222,7 +212,6 @@
       padding: 0.3rem 1rem;
       border-radius: 40px;
       margin: 0.4rem 0.4rem 0 0;
-      font-size: 0.85rem;
     }
 
     /* Services Cards */
@@ -241,7 +230,6 @@
     .service-card:hover {
       transform: translateY(-6px);
       border-color: #0ab3c6;
-      box-shadow: 0 15px 25px -12px rgba(0,0,0,0.5);
     }
     .service-card i {
       font-size: 2.5rem;
@@ -249,18 +237,18 @@
       margin-bottom: 1rem;
     }
 
-    /* Certificates Interactive Cards */
+    /* Certificate Cards with Image Support */
     .certs-container {
       display: flex;
       flex-wrap: wrap;
-      gap: 1.5rem;
+      gap: 1.8rem;
       justify-content: center;
     }
     .cert-card {
       background: #0F172A;
       border-radius: 24px;
-      padding: 1.2rem 1.8rem;
-      min-width: 170px;
+      padding: 1.2rem;
+      min-width: 200px;
       text-align: center;
       border-left: 4px solid #0ab3c6;
       cursor: pointer;
@@ -270,21 +258,31 @@
     .cert-card:hover {
       transform: translateY(-5px) scale(1.02);
       background: #1a2335;
-      border-left-width: 6px;
       box-shadow: 0 12px 24px rgba(10, 179, 198, 0.2);
     }
-    .cert-card i {
-      font-size: 2rem;
+    .cert-icon {
+      font-size: 2.5rem;
       color: #0ab3c6;
       margin-bottom: 0.5rem;
       display: block;
     }
+    .cert-thumb {
+      width: 80px;
+      height: 80px;
+      object-fit: cover;
+      border-radius: 12px;
+      margin: 0 auto 0.8rem;
+      display: block;
+      border: 2px solid #0ab3c6;
+      background: #111827;
+    }
     .cert-card span {
       font-weight: 600;
-      font-size: 0.95rem;
+      font-size: 0.9rem;
+      display: block;
     }
 
-    /* Modal for certificate image preview */
+    /* Modal for full certificate image */
     .modal {
       display: none;
       position: fixed;
@@ -292,13 +290,12 @@
       left: 0;
       width: 100%;
       height: 100%;
-      background: rgba(0, 0, 0, 0.9);
+      background: rgba(0, 0, 0, 0.92);
       backdrop-filter: blur(12px);
       z-index: 2000;
       justify-content: center;
       align-items: center;
       cursor: pointer;
-      animation: fadeIn 0.2s ease;
     }
     .modal-content {
       background: linear-gradient(135deg, #0F172A, #0a0f1a);
@@ -308,7 +305,6 @@
       padding: 1.8rem;
       text-align: center;
       border: 2px solid #0ab3c6;
-      box-shadow: 0 30px 50px rgba(0,0,0,0.6);
       animation: slideUp 0.3s ease;
     }
     .modal-content img {
@@ -322,12 +318,6 @@
     .modal-content h3 {
       margin-top: 1rem;
       color: #0ab3c6;
-      font-size: 1.5rem;
-    }
-    .modal-content p {
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #cbd5e1;
     }
     .close-modal {
       position: absolute;
@@ -343,24 +333,16 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      transition: 0.2s;
-      z-index: 2001;
     }
     .close-modal:hover {
       background: #0ab3c6;
       color: #0A0C15;
-      transform: rotate(90deg);
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
     }
     @keyframes slideUp {
       from { transform: translateY(40px); opacity: 0; }
       to { transform: translateY(0); opacity: 1; }
     }
 
-    /* Project Card */
     .project-card {
       background: #111827;
       border-radius: 28px;
@@ -378,17 +360,8 @@
       color: #0A0C15;
       text-decoration: none;
       font-weight: bold;
-      transition: 0.2s;
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-    }
-    .github-btn:hover {
-      background: #0897a8;
-      transform: translateY(-2px);
     }
 
-    /* Contact */
     .contact-flex {
       display: flex;
       flex-wrap: wrap;
@@ -408,12 +381,6 @@
       border-radius: 20px;
       color: white;
       font-family: inherit;
-      transition: 0.2s;
-    }
-    input:focus, textarea:focus {
-      outline: none;
-      border-color: #0ab3c6;
-      box-shadow: 0 0 0 2px rgba(10, 179, 198, 0.2);
     }
     .social-icons a {
       color: #cbd5e1;
@@ -424,7 +391,6 @@
     }
     .social-icons a:hover {
       color: #0ab3c6;
-      transform: translateY(-3px);
     }
     footer {
       background: #060811;
@@ -432,46 +398,22 @@
       text-align: center;
     }
 
-    /* Watermark with dtu.jpg style (visible modern logo) */
+    /* DTU Watermark */
     .dtu-watermark {
       position: fixed;
       bottom: 20px;
       right: 20px;
       z-index: 999;
-      opacity: 0.12;
+      opacity: 0.15;
       pointer-events: none;
-      transition: opacity 0.3s;
       font-family: 'Inter', monospace;
       background: rgba(10, 179, 198, 0.2);
       backdrop-filter: blur(4px);
       padding: 0.5rem 1rem;
       border-radius: 50px;
       font-weight: 800;
-      font-size: 1.2rem;
-      letter-spacing: 2px;
+      font-size: 1.1rem;
       color: #0ab3c6;
-      border: 1px solid rgba(10, 179, 198, 0.4);
-    }
-    .dtu-watermark::before {
-      content: "🏛️ ";
-      font-size: 1rem;
-    }
-    @media (max-width: 768px) {
-      .container {
-        padding: 0 1.3rem;
-      }
-      .nav-container {
-        flex-direction: column;
-      }
-      h2 {
-        font-size: 1.8rem;
-      }
-      .dtu-watermark {
-        font-size: 0.8rem;
-        bottom: 12px;
-        right: 12px;
-        padding: 0.3rem 0.8rem;
-      }
     }
     .toast-msg {
       position: fixed;
@@ -486,13 +428,17 @@
       opacity: 0;
       transition: 0.2s;
       pointer-events: none;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    }
+    @media (max-width: 768px) {
+      .container { padding: 0 1.3rem; }
+      .nav-container { flex-direction: column; }
+      h2 { font-size: 1.8rem; }
+      .avatar-circle { width: 140px; height: 140px; }
     }
   </style>
 </head>
 <body>
-<!-- DTU Watermark (modern beautiful) -->
-<div class="dtu-watermark">DTU ★ Debre Tabor University</div>
+<div class="dtu-watermark">🏛️ DTU | Debre Tabor University</div>
 
 <nav class="navbar">
   <div class="container nav-container">
@@ -514,13 +460,19 @@
 </nav>
 
 <main>
-  <!-- HOME -->
+  <!-- HOME with Profile Photo -->
   <section id="home">
     <div class="container" style="display: flex; flex-wrap: wrap; align-items: center; gap: 2.5rem;">
       <div style="flex: 1; text-align: center;">
         <div class="avatar-circle">
-          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='48' fill='%230ab3c6' /%3E%3Ctext x='50' y='70' font-size='40' text-anchor='middle' fill='white' font-weight='bold'%3EYA%3C/text%3E%3C/svg%3E" alt="Yohannes Avatar" class="avatar-img">
+          <!-- =============================================== -->
+          <!-- REPLACE "jo.png" WITH YOUR ACTUAL PHOTO FILE    -->
+          <!-- Place your photo in the same folder and rename: -->
+          <!-- Example: <img src="jo.png" class="avatar-img">  -->
+          <!-- =============================================== -->
+         <img src="jo.png" alt="Yohannes Aregay" class="avatar-img" id="profileImage">
         </div>
+        
       </div>
       <div style="flex: 2;">
         <h1 style="font-size: 3rem; font-weight: 800;">Yoni Tech</h1>
@@ -553,25 +505,20 @@
     <div class="container">
       <h2 data-key="skills_title">Skills & Expertise</h2>
       <div class="skills-grid">
-        <div class="skill-group">
-          <h3>⚡ Core Skills</h3>
+        <div class="skill-group"><h3>⚡ Core Skills</h3>
           <div class="skill-item"><div class="skill-name"><span>Web Development</span><span>90%</span></div><div class="progress-bar"><div class="progress-fill" data-progress="90"></div></div></div>
           <div class="skill-item"><div class="skill-name"><span>Video Editing</span><span>85%</span></div><div class="progress-bar"><div class="progress-fill" data-progress="85"></div></div></div>
           <div class="skill-item"><div class="skill-name"><span>Digital Marketing</span><span>80%</span></div><div class="progress-bar"><div class="progress-fill" data-progress="80"></div></div></div>
           <div class="skill-item"><div class="skill-name"><span>Copywriting</span><span>88%</span></div><div class="progress-bar"><div class="progress-fill" data-progress="88"></div></div></div>
           <div class="skill-item"><div class="skill-name"><span>IT Support</span><span>92%</span></div><div class="progress-bar"><div class="progress-fill" data-progress="92"></div></div></div>
         </div>
-        <div class="skill-group">
-          <h3>🛠️ Technical Stack</h3>
+        <div class="skill-group"><h3>🛠️ Technical Stack</h3>
           <div class="skill-item"><div class="skill-name"><span>HTML5/CSS3</span><span>92%</span></div><div class="progress-bar"><div class="progress-fill" data-progress="92"></div></div></div>
           <div class="skill-item"><div class="skill-name"><span>JavaScript</span><span>85%</span></div><div class="progress-bar"><div class="progress-fill" data-progress="85"></div></div></div>
           <div class="skill-item"><div class="skill-name"><span>Photoshop/Illustrator</span><span>78%</span></div><div class="progress-bar"><div class="progress-fill" data-progress="78"></div></div></div>
           <div class="skill-item"><div class="skill-name"><span>Video Editing Tools</span><span>86%</span></div><div class="progress-bar"><div class="progress-fill" data-progress="86"></div></div></div>
         </div>
-        <div class="skill-group">
-          <h3>🤝 Soft Skills</h3>
-          <div><span class="soft-badge">Honesty</span><span class="soft-badge">Punctuality</span><span class="soft-badge">Respect</span><span class="soft-badge">Communication</span></div>
-        </div>
+        <div class="skill-group"><h3>🤝 Soft Skills</h3><div><span class="soft-badge">Honesty</span><span class="soft-badge">Punctuality</span><span class="soft-badge">Respect</span><span class="soft-badge">Communication</span></div></div>
       </div>
     </div>
   </section>
@@ -591,7 +538,7 @@
     </div>
   </section>
 
-  <!-- CERTIFICATES SECTION - Interactive with Images -->
+  <!-- CERTIFICATES with PHOTO SUPPORT -->
   <section id="certificates">
     <div class="container">
       <h2 data-key="certs_title">Certifications & Awards</h2>
@@ -599,6 +546,7 @@
       <div class="certs-container" id="certsFiveMillion"></div>
       <div style="margin: 2rem 0 1rem;"><h3>🏅 Cisco Networking Academy</h3></div>
       <div class="certs-container" id="certsCisco"></div>
+      
     </div>
   </section>
 
@@ -607,7 +555,7 @@
     <div class="container">
       <h2 data-key="projects_title">Featured Project</h2>
       <div class="project-card">
-        <div><i class="fas fa-vote-yea" style="font-size: 2rem; color:#0ab3c6;"></i><h3 style="margin-top: 0.5rem;">Online Voting System for DTUSU</h3><p>Secure, transparent digital voting platform for Debre Tabor University Student Union.</p></div>
+        <div><i class="fas fa-vote-yea" style="font-size: 2rem; color:#0ab3c6;"></i><h3>Online Voting System for DTUSU</h3><p>Secure, transparent digital voting platform for Debre Tabor University Student Union.</p></div>
         <a href="https://github.com/yohannes-tech/DTUSU-voting-system" target="_blank" class="github-btn"><i class="fab fa-github"></i> View on GitHub</a>
       </div>
     </div>
@@ -620,21 +568,17 @@
       <div class="contact-flex">
         <div class="contact-form">
           <form id="contactForm">
-            <div class="form-group"><input type="text" id="name" placeholder="Your Name" required></div>
-            <div class="form-group"><input type="email" id="email" placeholder="Email Address" required></div>
-            <div class="form-group"><textarea rows="4" id="msg" placeholder="Your Message..."></textarea></div>
-            <button type="submit" class="btn btn-primary">Send Message <i class="fas fa-lock"></i></button>
-            <p style="font-size:0.75rem; margin-top:0.5rem;">*Data protected with secure hashing</p>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Address" required style="margin-top: 1rem;">
+            <textarea rows="4" id="msg" placeholder="Your Message..." style="margin-top: 1rem;"></textarea>
+            <button type="submit" class="btn btn-primary" style="margin-top: 1rem;">Send Message <i class="fas fa-lock"></i></button>
           </form>
         </div>
         <div class="contact-info">
           <p><i class="fas fa-envelope" style="color:#0ab3c6;"></i> <strong>Email:</strong> yohannes@yonitech.com</p>
-          <p><i class="fas fa-map-marker-alt"></i> <strong data-key="location">Location:</strong> Ethiopia</p>
+          <p><i class="fas fa-map-marker-alt"></i> <strong>Location:</strong> Ethiopia</p>
           <div class="social-icons" style="margin-top: 1.5rem;">
-            <a href="#"><i class="fab fa-github"></i></a>
-            <a href="#"><i class="fab fa-linkedin"></i></a>
-            <a href="#"><i class="fab fa-twitter"></i></a>
-            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a><a href="#"><i class="fab fa-linkedin"></i></a><a href="#"><i class="fab fa-twitter"></i></a>
           </div>
         </div>
       </div>
@@ -645,11 +589,7 @@
 <footer>
   <div class="container">
     <p>© 2026 Yoni Tech. All rights reserved.</p>
-    <div class="social-icons" style="margin: 1rem 0;">
-      <a href="#"><i class="fab fa-github"></i></a>
-      <a href="#"><i class="fab fa-linkedin"></i></a>
-    </div>
-    <p data-key="footer_desc">Innovative IT solutions & creative digital services by Yohannes Aregay.</p>
+    <p data-key="footer_desc">Innovative IT solutions by Yohannes Aregay.</p>
   </div>
 </footer>
 <div id="toastMsg" class="toast-msg">✓ Certificate preview opened</div>
@@ -658,25 +598,63 @@
 <div id="certModal" class="modal">
   <div class="close-modal">&times;</div>
   <div class="modal-content">
-    <img id="modalImage" src="" alt="Certificate Image">
+    <img id="modalImage" src="" alt="Certificate">
     <h3 id="modalTitle"></h3>
     <p id="modalDesc"></p>
   </div>
 </div>
 
 <script>
-  // Certificate Data with high-quality image previews (detailed SVG badges as realistic certificates)
+  // ===================== HOW TO ADD PHOTOS =====================
+  // 1. PROFILE PHOTO (jo.png):
+  //    - Place your photo "jo.png" in the same folder as this HTML file
+  //    - Uncomment the line below in the "Home" section avatar-circle div
+  //    - Currently using a placeholder SVG. Replace with: 
+  //      <img src="jo.png" class="avatar-img" alt="Yohannes">
+  //
+  // 2. CERTIFICATE PHOTOS:
+  //    - Place your certificate images: at.png, andriod.png, data.png, program.png
+  //      and for Cisco: basic_networking.png, network_config.png, cybersecurity.png
+  //    - Update the "imagePath" property in the certificate arrays below
+  // ==============================================================
+
+  // Certificate data with REAL PHOTO SUPPORT - UPDATE PATHS HERE
   const fiveMillionCerts = [
-    { name: "Artificial Intelligence", icon: "fas fa-brain", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%230f172a' rx='20'/%3E%3Ccircle cx='200' cy='100' r='40' fill='%230ab3c6' opacity='0.2'/%3E%3Ctext x='200' y='110' font-size='28' text-anchor='middle' fill='%230ab3c6' font-weight='bold'%3E🤖 AI%3C/text%3E%3Ctext x='200' y='160' font-size='18' fill='white' text-anchor='middle'%3ECertificate of Achievement%3C/text%3E%3Ctext x='200' y='200' font-size='14' fill='%2394a3b8' text-anchor='middle'%3E5 Million Ethiopian Program%3C/text%3E%3Ctext x='200' y='240' font-size='12' fill='%236b7280' text-anchor='middle'%3EYohannes Aregay%3C/text%3E%3C/svg%3E", desc: "Artificial Intelligence Certificate - 5 Million Ethiopian Program" },
-    { name: "Android Development", icon: "fab fa-android", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%230f172a' rx='20'/%3E%3Ctext x='200' y='100' font-size='48' text-anchor='middle' fill='%230ab3c6'%3E📱%3C/text%3E%3Ctext x='200' y='160' font-size='24' fill='white' text-anchor='middle'%3EAndroid Developer%3C/text%3E%3Ctext x='200' y='200' font-size='14' fill='%2394a3b8' text-anchor='middle'%3EMastery in Android App Development%3C/text%3E%3Ctext x='200' y='240' font-size='12' fill='%236b7280' text-anchor='middle'%3E5 Million Ethiopian Initiative%3C/text%3E%3C/svg%3E", desc: "Android Development Certificate" },
-    { name: "Data Science", icon: "fas fa-chart-line", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%230f172a' rx='20'/%3E%3Ctext x='200' y='100' font-size='48' text-anchor='middle' fill='%230ab3c6'%3E📊%3C/text%3E%3Ctext x='200' y='160' font-size='24' fill='white' text-anchor='middle'%3EData Science%3C/text%3E%3Ctext x='200' y='200' font-size='14' fill='%2394a3b8' text-anchor='middle'%3EAnalytics & Machine Learning%3C/text%3E%3Ctext x='200' y='240' font-size='12' fill='%236b7280' text-anchor='middle'%3E5MEP - Data Science Track%3C/text%3E%3C/svg%3E", desc: "Data Science Certification" },
-    { name: "Fundamental Programming", icon: "fas fa-code", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%230f172a' rx='20'/%3E%3Ctext x='200' y='100' font-size='48' text-anchor='middle' fill='%230ab3c6'%3E&lt;/&gt;%3C/text%3E%3Ctext x='200' y='160' font-size='24' fill='white' text-anchor='middle'%3EProgramming Fundamentals%3C/text%3E%3Ctext x='200' y='200' font-size='14' fill='%2394a3b8' text-anchor='middle'%3EAlgorithm & Logic Building%3C/text%3E%3Ctext x='200' y='240' font-size='12' fill='%236b7280' text-anchor='middle'%3E5 Million Ethiopian Program%3C/text%3E%3C/svg%3E", desc: "Fundamental Programming Certificate" }
+    { name: "Artificial Intelligence", icon: "fas fa-brain", imagePath: "at.jpg", fallbackIcon: "fas fa-image", desc: "AI Certificate - 5 Million Ethiopian Program" },
+    { name: "Android Development", icon: "fab fa-android", imagePath: "andriod.jpg", fallbackIcon: "fab fa-android", desc: "Android Development Certificate" },
+    { name: "Data Science", icon: "fas fa-chart-line", imagePath: "data.jpg", fallbackIcon: "fas fa-database", desc: "Data Science Certification" },
+    { name: "Fundamental Programming", icon: "fas fa-code", imagePath: "program.jpg", fallbackIcon: "fas fa-code", desc: "Programming Fundamentals Certificate" }
   ];
+  
   const ciscoCerts = [
-    { name: "Basic Networking", icon: "fas fa-network-wired", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%230f172a' rx='20'/%3E%3Ctext x='200' y='90' font-size='48' text-anchor='middle' fill='%230ab3c6'%3E🌐%3C/text%3E%3Ctext x='200' y='150' font-size='26' fill='white' text-anchor='middle'%3EBasic Networking%3C/text%3E%3Ctext x='200' y='200' font-size='14' fill='%2394a3b8' text-anchor='middle'%3ECisco Networking Academy%3C/text%3E%3Ctext x='200' y='240' font-size='12' fill='%236b7280' text-anchor='middle'%3EOutstanding Achievement%3C/text%3E%3C/svg%3E", desc: "Basic Networking - Cisco Networking Academy" },
-    { name: "Network Device Config", icon: "fas fa-microchip", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%230f172a' rx='20'/%3E%3Ctext x='200' y='90' font-size='48' text-anchor='middle' fill='%230ab3c6'%3E⚙️%3C/text%3E%3Ctext x='200' y='150' font-size='24' fill='white' text-anchor='middle'%3ENetwork Device Config%3C/text%3E%3Ctext x='200' y='200' font-size='14' fill='%2394a3b8' text-anchor='middle'%3ERouting & Switching Specialist%3C/text%3E%3Ctext x='200' y='240' font-size='12' fill='%236b7280' text-anchor='middle'%3ECisco Academy Award%3C/text%3E%3C/svg%3E", desc: "Network Device Configuration Award" },
-    { name: "Cybersecurity", icon: "fas fa-shield-alt", img: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 280'%3E%3Crect width='400' height='280' fill='%230f172a' rx='20'/%3E%3Ctext x='200' y='90' font-size='48' text-anchor='middle' fill='%230ab3c6'%3E🛡️%3C/text%3E%3Ctext x='200' y='150' font-size='26' fill='white' text-anchor='middle'%3ECybersecurity%3C/text%3E%3Ctext x='200' y='200' font-size='14' fill='%2394a3b8' text-anchor='middle'%3EThreat Defense & Risk Management%3C/text%3E%3Ctext x='200' y='240' font-size='12' fill='%236b7280' text-anchor='middle'%3ECisco Networking Academy%3C/text%3E%3C/svg%3E", desc: "Cybersecurity Essentials Certification" }
+    { name: "Basic Networking", icon: "fas fa-network-wired", imagePath: "basic_networking.png", fallbackIcon: "fas fa-network-wired", desc: "Cisco Basic Networking Award" },
+    { name: "Network Device Config", icon: "fas fa-microchip", imagePath: "network_config.png", fallbackIcon: "fas fa-microchip", desc: "Network Device Configuration" },
+    { name: "Cybersecurity", icon: "fas fa-shield-alt", imagePath: "cybersecurity.png", fallbackIcon: "fas fa-shield-alt", desc: "Cybersecurity Essentials" }
   ];
+
+  // Helper: load image or show fallback
+  function loadImageWithFallback(imgElement, src, fallbackIcon, certName) {
+    imgElement.onerror = function() {
+      // If image fails, show icon + text fallback
+      const parent = this.parentElement;
+      const iconSpan = document.createElement('i');
+      iconSpan.className = `${fallbackIcon} cert-icon`;
+      iconSpan.style.fontSize = "2.5rem";
+      iconSpan.style.color = "#0ab3c6";
+      iconSpan.style.display = "block";
+      iconSpan.style.marginBottom = "0.5rem";
+      const textSpan = document.createElement('span');
+      textSpan.innerText = certName;
+      textSpan.style.fontWeight = "600";
+      parent.innerHTML = '';
+      parent.appendChild(iconSpan);
+      parent.appendChild(textSpan);
+      parent.style.padding = "1.2rem";
+      // Add click event still works with dataset
+      parent.setAttribute('data-fallback-name', certName);
+    };
+    imgElement.src = src;
+  }
 
   function buildCertContainer(containerId, certsArray) {
     const container = document.getElementById(containerId);
@@ -685,20 +663,58 @@
     certsArray.forEach(cert => {
       const card = document.createElement("div");
       card.className = "cert-card";
-      card.setAttribute("data-img", cert.img);
+      card.style.cursor = "pointer";
+      
+      // Create thumbnail image element
+      const thumbImg = document.createElement("img");
+      thumbImg.className = "cert-thumb";
+      thumbImg.alt = cert.name;
+      thumbImg.style.width = "80px";
+      thumbImg.style.height = "80px";
+      thumbImg.style.objectFit = "cover";
+      thumbImg.style.borderRadius = "12px";
+      
+      // Try to load the image, fallback to icon if fails
+      thumbImg.onerror = function() {
+        this.style.display = "none";
+        const iconElem = document.createElement("i");
+        iconElem.className = `${cert.icon} cert-icon`;
+        iconElem.style.fontSize = "2.5rem";
+        iconElem.style.color = "#0ab3c6";
+        iconElem.style.marginBottom = "0.5rem";
+        card.insertBefore(iconElem, card.firstChild);
+      };
+      thumbImg.src = cert.imagePath;
+      
+      const titleSpan = document.createElement("span");
+      titleSpan.innerText = cert.name;
+      
+      card.appendChild(thumbImg);
+      card.appendChild(titleSpan);
+      
+      // Store certificate data for modal
+      card.setAttribute("data-img-src", cert.imagePath);
       card.setAttribute("data-title", cert.name);
       card.setAttribute("data-desc", cert.desc);
-      card.innerHTML = `<i class="${cert.icon}"></i><span>${cert.name}</span>`;
+      card.setAttribute("data-fallback-icon", cert.icon);
+      
       card.addEventListener("click", (e) => {
         e.stopPropagation();
         const modal = document.getElementById("certModal");
         const modalImg = document.getElementById("modalImage");
         const modalTitle = document.getElementById("modalTitle");
         const modalDesc = document.getElementById("modalDesc");
-        modalImg.src = cert.img;
+        
+        // Try to load full image in modal
+        modalImg.src = cert.imagePath;
+        modalImg.onerror = function() {
+          // If image missing, show placeholder with icon
+          this.src = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 200'%3E%3Crect width='200' height='200' fill='%230f172a'/%3E%3Ctext x='100' y='110' font-size='48' text-anchor='middle' fill='%230ab3c6'%3E📜%3C/text%3E%3Ctext x='100' y='160' font-size='14' fill='white' text-anchor='middle'%3ECertificate Image%3C/text%3E%3C/svg%3E";
+        };
         modalTitle.innerText = cert.name + " Certificate";
         modalDesc.innerText = cert.desc;
         modal.style.display = "flex";
+        
         const toast = document.getElementById("toastMsg");
         toast.style.opacity = "1";
         setTimeout(() => { toast.style.opacity = "0"; }, 1500);
@@ -719,8 +735,8 @@
 
   // Language translations (simplified)
   const translations = {
-    en: { nav_home: "Home", nav_about: "About", nav_skills: "Skills", nav_services: "Services", nav_certs: "Certificates", nav_projects: "Projects", nav_contact: "Contact", tagline: '"Innovating Technology, Empowering Digital Skills"', home_intro: "Yoni Tech is a personal technology brand created by Yohannes Aregay, providing digital solutions, IT services, and creative technology work.", view_services: "View Services", contact_me: "Contact Me", about_title: "About Me", name_label: "Name:", name_val: "Yohannes Aregay", prof_label: "Profession:", prof_val: "IT Specialist and Digital Creator", edu_label: "Education:", edu_val: "BSc in Information Technology – Debre Tabor University", loc_label: "Location:", loc_val: "Debre Tabor, Ethiopia", about_desc: "I am an Information Technology graduate passionate about technology, digital innovation, and helping individuals and businesses grow through modern IT solutions.", skills_title: "Skills & Expertise", services_title: "What I Offer", certs_title: "Certifications & Awards", projects_title: "Featured Project", contact_title: "Get In Touch", location: "Location:", footer_desc: "Innovative IT solutions & creative digital services by Yohannes Aregay." },
-    am: { nav_home: "መነሻ", nav_about: "ስለ እኔ", nav_skills: "ክህሎቶች", nav_services: "አገልግሎቶች", nav_certs: "ሰርተፊኬቶች", nav_projects: "ፕሮጀክቶች", nav_contact: "አግኙኝ", tagline: '"ቴክኖሎጂን ማደስ፣ ዲጂታል ክህሎቶችን ማብቃት"', home_intro: "ዮኒ ቴክ በዮሃንስ አረጋይ የተፈጠረ የግል ቴክኖሎጂ ብራንድ ሲሆን ዲጂታል መፍትሄዎችን፣ የአይቲ አገልግሎቶችን እና የፈጠራ ስራዎችን ይሰጣል።", view_services: "አገልግሎቶችን ይመልከቱ", contact_me: "ያግኙኝ", about_title: "ስለ እኔ", name_label: "ስም:", name_val: "ዮሃንስ አረጋይ", prof_label: "ሙያ:", prof_val: "አይቲ ስፔሻሊስት እና ዲጂታል ፈጣሪ", edu_label: "ትምህርት:", edu_val: "በኢንፎርሜሽን ቴክኖሎጂ የመጀመሪያ ዲግሪ – ደብረ ታቦር ዩኒቨርሲቲ", loc_label: "አድራሻ:", loc_val: "ደብረ ታቦር፣ ኢትዮጵያ", about_desc: "እኔ በኢንፎርሜሽን ቴክኖሎጂ የተመረቅሁ ሲሆን በቴክኖሎጂ፣ በዲጂታል ፈጠራ እና ዘመናዊ የአይቲ መፍትሄዎች ግለሰቦችን እና ንግዶችን ለማደግ እገዛለሁ።", skills_title: "ክህሎቶች እና ብቃቶች", services_title: "የምሰጣቸው አገልግሎቶች", certs_title: "የምስክር ወረቀቶች እና ሽልማቶች", projects_title: "ታዋቂ ፕሮጀክት", contact_title: "ያግኙኝ", location: "አካባቢ፡", footer_desc: "በዮሃንስ አረጋይ የቀረቡ አዳዲስ የአይቲ መፍትሄዎች እና የፈጠራ ዲጂታል አገልግሎቶች።" }
+    en: { nav_home: "Home", nav_about: "About", nav_skills: "Skills", nav_services: "Services", nav_certs: "Certificates", nav_projects: "Projects", nav_contact: "Contact", tagline: '"Innovating Technology, Empowering Digital Skills"', home_intro: "Yoni Tech is a personal technology brand created by Yohannes Aregay, providing digital solutions, IT services, and creative technology work.", view_services: "View Services", contact_me: "Contact Me", about_title: "About Me", name_label: "Name:", name_val: "Yohannes Aregay", prof_label: "Profession:", prof_val: "IT Specialist and Digital Creator", edu_label: "Education:", edu_val: "BSc in Information Technology – Debre Tabor University", loc_label: "Location:", loc_val: "Debre Tabor, Ethiopia", about_desc: "I am an Information Technology graduate passionate about technology, digital innovation, and helping individuals and businesses grow through modern IT solutions.", skills_title: "Skills & Expertise", services_title: "What I Offer", certs_title: "Certifications & Awards", projects_title: "Featured Project", contact_title: "Get In Touch", footer_desc: "Innovative IT solutions by Yohannes Aregay." },
+    am: { nav_home: "መነሻ", nav_about: "ስለ እኔ", nav_skills: "ክህሎቶች", nav_services: "አገልግሎቶች", nav_certs: "ሰርተፊኬቶች", nav_projects: "ፕሮጀክቶች", nav_contact: "አግኙኝ", tagline: '"ቴክኖሎጂን ማደስ፣ ዲጂታል ክህሎቶችን ማብቃት"', home_intro: "ዮኒ ቴክ በዮሃንስ አረጋይ የተፈጠረ የግል ቴክኖሎጂ ብራንድ ነው።", view_services: "አገልግሎቶች", contact_me: "ያግኙኝ", about_title: "ስለ እኔ", name_label: "ስም:", name_val: "ዮሃንስ አረጋይ", prof_label: "ሙያ:", prof_val: "አይቲ ስፔሻሊስት", edu_label: "ትምህርት:", edu_val: "ደብረ ታቦር ዩኒቨርሲቲ", loc_label: "አድራሻ:", loc_val: "ደብረ ታቦር", about_desc: "በኢንፎርሜሽን ቴክኖሎጂ የተመረቅሁ ሲሆን በቴክኖሎጂ የተመሰረቱ መፍትሄዎችን አቀርባለሁ።", skills_title: "ክህሎቶች", services_title: "አገልግሎቶች", certs_title: "ሰርተፊኬቶች", projects_title: "ፕሮጀክት", contact_title: "አግኙኝ", footer_desc: "ዘመናዊ የአይቲ መፍትሄዎች" }
   };
   let currentLang = "en";
   function applyLanguage(lang) {
@@ -735,7 +751,7 @@
   document.querySelectorAll(".lang-btn").forEach(btn => btn.addEventListener("click", () => applyLanguage(btn.getAttribute("data-lang"))));
   applyLanguage("en");
 
-  // Progress bars animation
+  // Progress animation
   const progressBars = document.querySelectorAll(".progress-fill");
   function animateProgress() {
     progressBars.forEach(bar => {
@@ -749,25 +765,26 @@
   window.addEventListener("scroll", animateProgress);
   animateProgress();
 
-  // Secure password hashing simulation for contact
+  // Contact form with hashing
   const contactForm = document.getElementById("contactForm");
   const toastMsg = document.getElementById("toastMsg");
   contactForm.addEventListener("submit", async (e) => {
     e.preventDefault();
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
-    const msg = document.getElementById("msg").value;
-    if (!name || !email) { toastMsg.innerText = "⚠️ Please fill required fields"; toastMsg.style.opacity=1; setTimeout(()=>toastMsg.style.opacity=0,2000); return; }
+    if (!name || !email) { toastMsg.innerText = "⚠️ Fill required fields"; toastMsg.style.opacity=1; setTimeout(()=>toastMsg.style.opacity=0,2000); return; }
     const encoder = new TextEncoder();
-    const hashBuffer = await crypto.subtle.digest("SHA-256", encoder.encode(name+email+msg+Date.now()));
-    const hashArray = Array.from(new Uint8Array(hashBuffer));
-    const hash = hashArray.map(b => b.toString(16).padStart(2,'0')).join('');
-    console.log("Secure hash (simulated):", hash);
+    const hashBuffer = await crypto.subtle.digest("SHA-256", encoder.encode(name+email+Date.now()));
     toastMsg.innerText = "✓ Message secured & sent!";
     toastMsg.style.opacity = 1;
     setTimeout(() => toastMsg.style.opacity = 0, 2500);
     contactForm.reset();
   });
+
+  // Profile photo helper (uncomment and set your photo path)
+  // document.getElementById("profileImage").src = "jo.png";
+  console.log("✅ Ready! To add photos: 1) Place jo.png in folder, 2) Update image paths in certificate arrays (at.png, andriod.png, etc.)");
 </script>
+
 </body>
 </html>
